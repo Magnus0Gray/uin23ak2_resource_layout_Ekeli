@@ -12,63 +12,42 @@
     <div class="container">
         <header>
             <a href="index.html">
-                <img src="images/LD_logo.svg" alt="LEGO-DUDES" />
+                <h1>Ressursarkiv</h1>
              </a>
-            <figure id="cart" onclick="toggleCart()">
-                <span class="label">0</span>
-                <img src="images/legocart.svg" alt="handlekurv" />
-            </figure>
         </header>
-        <section id="cartview" class="hidden"><h3>Din handlevogn</h3>
-        <ul>
-            <li>
-                Handlekurv tom
-            </li>
-        </ul>
-        <p>
-            Totalt kr. <span id="carttotal">0,-</span>
-        </p>
-        </section>
         <nav>
-            <a href="city.html">City</a>
-            <a href="ninjago.html">Ninjago</a>
-            <a href="castle-knights.html">Castle & Knights</a>
-            <a href="marinepirates.html">Marine & Pirates</a>
-            <a href="moviecharacters">Movie Characters</a>
+            <button class="categoryButtonSelected">
+                <h3>Kategori 1</h3>
+            </button>
+            <button class="categoryButton">
+                <h3>Kategori 2</h3>
+            </button>
+            <button class="categoryButton">
+                <h3>Kategori 3</h3>
+            </button>
         </nav>
         <main>
-            <h2>Ninjago</h2>
-            <article class="productcard">
-                <img src="images/PROD_lil_ninja.webp" alt="Produktbilde av Lil'Ninja" />
-                <a href="ninjago.html">Ninjago</a>
-                <h3>Lil'Ninja</h3>
-                <span class="price">kr. 89,-</span>
-                <button>Legg i handlekurv</button>
-            </article>
-            <article class="productcard">
-                <img src="images/PROD_master_wu.webp" alt="Produktbilde av Mester Wu" />
-                <a href="ninjago.html">Ninjago</a>
-                <h3>Mester Wu</h3>
-                <span class="price">kr. 109,-</span>
-                <button>Legg i handlekurv</button>
-            </article>
-            <article class="productcard">
-                <img src="images/PROD_scuba_kai.webp" alt="Produktbilde av Scuba Kai" />
-                <a href="ninjago.html">Ninjago</a>
-                <h3>Scuba Kai</h3>
-                <span class="price">kr. 89,-</span>
-                <button>Legg i handlekurv</button>
-            </article>
-            <article class="productcard">
-                <img src="images/PROD_dragon_zane.webp" alt="Produktbilde av Zane" />
-                <a href="ninjago.html">Ninjago</a>
-                <h3>Dragon Zane</h3>
-                <span class="price">kr. 89,-</span>
-                <button onclick="addToCart('Dragon Zane', 89)">Legg i handlekurv</button>
+            <article class="mainArticles">
+            <h2>Kategori</h2>
+            <span class="articleText">Lorem Ipsum</span>
+            <section class="sources">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Ressursarkiv
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            Ressursarkiv
+                        </a>
+                    </li>
+                </ul>
+            </section>
             </article>
         </main>
     </div>
 
-    <script src="shopscript.js"></script>
+    <script src="ressurser.js"></script>
 </body>
 </html>
