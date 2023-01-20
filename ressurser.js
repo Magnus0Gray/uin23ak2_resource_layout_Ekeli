@@ -111,27 +111,32 @@ function genNav()
         navHTML +=
 
         `
-            <button onclick="replaceContent(${index}, this)" class=${classToUse}>
+            <button onclick="replaceContent(${index}, this, false)" class=${classToUse}>
                 <h3>${titler.category}</h3>
             </button>`
     })
 
     document.querySelector("#navBar").innerHTML = navHTML
     console.log(navHTML)
+
+    replaceContent(0, null, true)
 }
 
-function replaceContent(buttonID, buttonRef) {
+function replaceContent(buttonID, buttonRef, isInit) {
 
+    if (isInit == false)
+    {
 
-    //console.log(buttonRef)
-    let clearselected, i
+        //console.log(buttonRef)
+        let clearselected, i
 
-    clearselected = document.getElementsByClassName("categoryButtonSelected")
-    for (i = 0; i < clearselected.length; ++i)
-        clearselected[i].setAttribute("class", "categoryButton")
-    // console.log(resources[buttonID])
+        clearselected = document.getElementsByClassName("categoryButtonSelected")
+        for (i = 0; i < clearselected.length; ++i)
+            clearselected[i].setAttribute("class", "categoryButton")
+        // console.log(resources[buttonID])
 
-   buttonRef.setAttribute("class", "categoryButtonSelected")
+            buttonRef.setAttribute("class", "categoryButtonSelected")
+    }
 
     //console.log(buttonStyleRef)
 
