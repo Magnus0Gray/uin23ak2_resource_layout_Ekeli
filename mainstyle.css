@@ -54,8 +54,9 @@ header a
     border-top: 1px solid var(--grey);
     background-color: var(--lightgrey);
     padding: 0.1rem 1rem;
-    width: 100%;
-    max-width: 150px;
+    width: auto;
+    max-width: 350px;
+    display: inline-block;
 }
 
 .categoryButton h3 {
@@ -71,8 +72,9 @@ header a
     border: none;
     background-color: var(--blue);
     padding: 0.1rem 1rem;
-    width: 100%;
-    max-width: 150px;
+    width: auto;
+    max-width: 350px;
+    display: inline-block;
 }
 
 .categoryButtonSelected h3 {

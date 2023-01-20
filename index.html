@@ -8,30 +8,18 @@
     <link href="mainstyle.css" rel="stylesheet" />
 
 </head>
-<body>
+<body onload="genNav()">
     <div class="container">
         <header>
             <a href="index.html">
                 <h1>Ressursarkiv</h1>
              </a>
         </header>
-        <nav>
-            <button onclick="replaceContent('HTML')" class="categoryButtonSelected">
-                <h3>HTML</h3>
-            </button>
-            <button onclick="replaceContent('CSS')" class="categoryButton">
-                <h3>CSS</h3>
-            </button>
-            <button onclick="replaceContent('JavaScript')" class="categoryButton">
-                <h3>Javascript</h3>
-            </button>
-            <button onclick="replaceContent('React')" class="categoryButton">
-                <h3>React</h3>
-            </button>
+        <nav id="navBar" >
         </nav>
         <main>
-            <article class="mainArticles">
-            <h2>Kategori</h2>
+            <article id="mainArticles">
+            <h2>HTML</h2>
             <span class="articleText">HTML står for HyperText Markup Language, og er et strukturspråk som brukes for å lage strukturer til nettside- og applikasjonsgrensesnitt.</span>
             <section class="sources">
                 <ul>
