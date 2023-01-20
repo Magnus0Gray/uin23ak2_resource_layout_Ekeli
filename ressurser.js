@@ -93,4 +93,10 @@ const resources = [
             },
         ]
     },
+
+    function replaceContent(categoryTitle)
+    {
+        let contentHTML = ""
+
+    }
 ]
